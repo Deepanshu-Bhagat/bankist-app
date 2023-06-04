@@ -235,11 +235,6 @@ const startLogoutTimer = function () {
 // Event Handlers
 let currentAccount, timer;
 
-// Fake login
-currentAccount = account1;
-updateInfo(currentAccount);
-containerApp.style.opacity = '1';
-
 // Login button
 btnLogin.addEventListener('click', function (e) {
   e.preventDefault();
@@ -361,7 +356,7 @@ btnLoan.addEventListener('click', function (e) {
       currentAccount.movementsDates.push(new Date().toISOString());
 
       updateInfo(currentAccount);
-      
+
       clearInterval(timer);
       timer = startLogoutTimer();
     }, 2500);

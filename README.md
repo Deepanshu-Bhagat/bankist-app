@@ -18,3 +18,5 @@ Features:
 You can transfer money from one user to another user.
 You can request Loan.
 You can close your account.
+
+This project is assignment by Jonas Schmedtman in "Javascript course".
